@@ -1,0 +1,522 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* my edits start here */
+html {
+  font-size: 16px;
+}
+
+/* nav area */
+.main__nav {
+  /* border: pink solid 1px; */
+  width: 100%;
+  height: 85px;
+  display:flex;
+  justify-content: space-between;
+}
+
+.nav-mobile {
+  display:none;
+}
+
+.nav__links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding:20px;
+  font-family: 'roboto';
+}
+.joinusbutton {
+  background-color: #9DC20A;
+  padding: 15px !important;
+  border-radius: 10px;
+  color: white;
+  display: none;
+}
+
+.main-content-tablet {
+  display: none;
+}
+
+.nav__links a {
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.main__nav img{
+height: 1rem;
+padding-left: 0.5rem;
+}
+
+.main__nav .logo {
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #4a4a4a;
+  font-family: 'roboto mono'
+}
+
+/* main content area */
+
+.main__content {
+  /* margin: auto; */
+}
+.hero__image {
+  height: 650px;
+  background-image: url("../images/banner-landingpage.jpg");
+  background-size: cover;
+}
+.hero__image img{
+
+  width: 100%;
+  height:auto;
+}
+
+.greensignup__section{
+  border: #979797 solid 1px;
+  width: 568px;
+  background-color:#9DC20A;
+  border-radius: 4px;
+  float: left;
+  z-index: 2;
+  margin-top: 170px;
+  margin-left: 100px;
+
+
+}
+
+.green__header {
+
+}
+
+.signup__text  h2 {
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.signup__text  h1 {
+  color: white;
+  font-family: 'rubik';
+  font-size: 3.125rem;
+  line-height: 1.4;
+  text-align: center;
+  padding-bottom: 12px;
+}
+.signup__text  p {
+  color: white;
+  font-family: 'roboto';
+  font-size: 1.25rem;
+  line-height: 1.4;
+  text-align: center;
+  padding-bottom: 26px;
+
+}
+
+.signup__text  .boldFeb {
+  font-weight: bold;
+}
+
+.grey__button {
+  background-color: #4a4a4a;
+  width: 408px;
+  height: 64px;
+  border-radius: 4px;
+  margin: auto;
+  margin-bottom: 56px;
+}
+
+.joinWaitlist {
+  color: white;
+  font-size: 1.25rem;
+  font-family: 'roboto';
+  font-weight: medium;
+  line-height: 1.4;
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+/* cards section */
+.card__section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #eaeaea;
+  height: max-content;
+  padding-top: 5%;
+  padding-bottom: 46px;
+
+}
+
+.cardleft {
+  width: 46%;
+  background-color: white;
+  /* margin-right: 38px;
+  margin-left: 32px; */
+  
+}
+.imageleft {
+  display: flex;
+  justify-content: space-around;
+}
+
+.imageleft img {
+  width:90%;
+  height: 65%;
+  padding-top: 5%;
+  /* padding-left: 32px;
+  padding-right: 32px; */
+  
+}
+
+.textsection h2 {
+  font-family: 'roboto';
+  color: #4a4a4a;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  padding: 25px;
+
+}
+.textsection p {
+  font-family: 'roboto';
+  color: #4a4a4a;
+  font-size: 1rem;
+  font-weight: lighter;
+  line-height: 1.2;
+  text-align: center;
+  padding: 25px;
+
+}
+
+
+
+.cardright {
+  width: 46%;
+  background-color: white;
+}
+
+.imageright {
+  display: flex;
+  justify-content: space-around;
+}
+.imageright img {
+  width: 90%;
+  height: 65%;
+  padding-top: 5%;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+
+/* Image filter section */
+
+.grey__background {
+  background-color: #4a4a4a;
+  height: auto;
+}
+
+.filter__text {
+  text-align: center;
+  padding: 6% 0;
+}
+.filter__text h2{
+  color: white;
+  font-size: 2.25rem;
+  font-family: 'roboto';
+  font-weight: bold;
+}
+
+.filter__text p {
+  color: white;
+  font-size: 1rem;
+  font-family: 'roboto';
+  font-weight: lighter;
+  line-height: 2;
+}
+
+.filter__images {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 64px;
+}
+
+.filter__images img {
+  width:24.5%;
+}
+
+/* Quote section */
+
+.quotes__section {
+  background-color:#eaeaea;
+  height: auto;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.quote__text span {
+  color: #4a4a4a;
+  font-size: 1.875rem;
+  font-family: 'palatino';
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.quote__text img {
+  padding-left: 30px;
+}
+
+
+/* footer section */
+
+.footer {
+  background-color: #9b9b9b;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.footer span {
+  color: white;
+  font-size: 0.75rem;
+  font-family: 'roboto';
+
+}
+
+.footer .copyright {
+  padding-left: 32px;
+}
+
+.footer .location {
+padding-right: 32px;
+}
+
+/* .mobile__nav li, .mobile__nav a, .mobile__nav img{
+  display: none;
+
+} */
+
+
+/* media queries */
+
+/* tablet */
+@media only screen and (min-width: 630px) and (max-width: 830px) {
+  .joinusbutton {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .nav__links a{
+    text-align: center;
+  }
+  .main-content {
+    display: none;
+  }
+
+  .main-content-tablet {
+    display: contents;
+  }
+
+  .hero__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .signup__text {
+    display: flex;
+    flex-direction: column;
+ 
+  }
+
+  .hero__image h2 {
+    font-size: 2rem;
+    padding-bottom: 2%;
+  }
+  
+.textsection h2, .textsection p{
+  text-align: left;
+} 
+
+.textsection p {
+  padding-top: 0;
+}
+
+
+.quote__text span{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+}
+
+/* mobile */
+@media only screen and (max-width: 629px) {
+ .main__nav {
+  display: none;
+ }
+
+ .signup__text h2{
+   font-size: 2rem;
+ }
+
+ .signup__text h1{
+  font-size: 1.75rem;
+  padding-top: 5%;
+  
+}
+
+ .hero__image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 380px;
+}
+
+.main-content {
+  display: none;
+} 
+
+.main-content-tablet {
+  display: contents;
+}
+ .nav-mobile {
+   width: 100%;
+   display: contents;
+  
+ }
+
+ .nav-image-icons {
+    display: flex;
+    height: 48px;
+  justify-content: space-around; 
+  align-items: center;
+ }
+
+ .nav-image-icons img {
+   padding: 10px;
+ }
+ .joinusbutton-mobile {
+  background-color: #9DC20A;
+  padding: 8px !important;
+  border-radius: 10px;
+  color: white;
+
+
+ }
+  
+.card__section {
+  background-color: white;
+  padding: 0;
+
+}
+
+ .cardleft {
+   width: 100%;
+   background-color: #eaeaea;
+ }
+
+.textsection h2 {
+  font-size: 1.125rem;
+  font-family: 'roboto';
+  line-height: 1.3;
+}
+.textsection p {
+  padding-top: 0%;
+}
+
+.cardright {
+  width: 100%;
+}
+
+
+.filter__text h2 {
+  font-size: 1.125rem;
+  font-family: 'roboto';
+  line-height: 1.3;
+  padding-top: 5%;
+}
+
+.filter__text p {
+  font-size: 1rem;
+  font-family: 'roboto';
+  line-height: 2;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  
+}
+
+.quote__text span {
+font-size: 1.5rem;
+line-height: 1.4;
+
+}
+
+.quote__text{
+  padding: 5%;
+}
+ }
+
+
+
+
